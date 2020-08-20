@@ -1,0 +1,10 @@
+mixin text(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.cssExtra = spec.cssExtra || ''
+
+  p(class=spec.__class + ' ' + spec.cssExtra)
+    if block
+      block
+    else
+      != spec.text

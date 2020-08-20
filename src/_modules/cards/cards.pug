@@ -1,0 +1,10 @@
+mixin userCards(spec)
+  each val in spec
+    .users__content
+      div(class="users__item users__item--user")
+        | #{val.title} #{val.firstName} #{val.lastName}
+      .users__item
+      | #{val.id}
+      .users__item
+        a.users__link(href=`mailto: ${val.email}`)
+          | #{email}

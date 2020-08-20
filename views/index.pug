@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  main
+    +menu()
+    +title("Great success!")
+    figure(class="borat")
+      a(href="/about")
+        img(alt="Borat" src="/images/me.jpg")
+      figcaption
+        | HIGH FIVE!

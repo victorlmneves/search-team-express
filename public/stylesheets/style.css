@@ -1,0 +1,388 @@
+/** Font family **/
+/** Font size **/
+/** Font weight **/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+body {
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+a {
+  background-color: transparent; }
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+b,
+strong {
+  font-weight: bolder; }
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+img {
+  border-style: none; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+progress {
+  vertical-align: baseline; }
+
+textarea {
+  overflow: auto; }
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+details {
+  display: block; }
+
+summary {
+  display: list-item; }
+
+template {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/Icons/icons.eot?lcgmzt");
+  src: url("../fonts/Icons/icons.eot?lcgmzt#iefix") format("embedded-opentype"), url("../fonts/Icons/icons.ttf?lcgmzt") format("truetype"), url("../fonts/Icons/icons.woff?lcgmzt") format("woff"), url("../fonts/Icons/icons.svg?lcgmzt#icomoon") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-user:before {
+  content: "\e900"; }
+
+.icon-search:before {
+  content: "\e901"; }
+
+.icon-location:before {
+  content: "\e902"; }
+
+.icon-phone:before {
+  content: "\e903"; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+body, html {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: #777;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px; }
+  @media print, (min-width: 1280px) {
+    body, html {
+      font-size: 16px; } }
+
+section {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 30px; }
+
+::placeholder {
+  color: #ccc; }
+
+/* Source: https://loading.io/css/ */
+.spinner {
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  position: absolute;
+  opacity: 1;
+  transition: 1s opacity;
+  width: 100%; }
+  .spinner div {
+    animation: spinner 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border: 6px solid #ccc;
+    border-color: #ccc transparent transparent transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: block;
+    height: 51px;
+    margin: 6px;
+    position: absolute;
+    width: 51px; }
+    .spinner div:nth-child(1) {
+      animation-delay: -0.45s; }
+    .spinner div:nth-child(2) {
+      animation-delay: -0.3s; }
+    .spinner div:nth-child(3) {
+      animation-delay: -0.15s; }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.is-hidden {
+  display: none !important; }
+
+.no-results {
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px; }
+  .no-results__msg {
+    font-size: 2rem;
+    font-weight: 300; }
+
+.search {
+  margin: 30px auto 60px;
+  padding: 0;
+  position: relative;
+  width: 300px; }
+  .search__input {
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    color: #ccc;
+    font-size: .9rem;
+    height: 30px;
+    padding: 5px 40px 5px 10px;
+    width: 100%; }
+  .search__button {
+    background: transparent;
+    border: 0;
+    border-left: 2px solid #ccc;
+    cursor: pointer;
+    color: #ccc;
+    height: 30px;
+    line-height: .8;
+    padding: 0 8px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
+    .search__button:hover {
+      background: #ccc;
+      color: #fff; }
+    .search__button:disabled {
+      display: none; }
+
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  opacity: 0;
+  transition: 2s opacity; }
+  .users__content {
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    padding: 10px 10px 40px;
+    position: relative;
+    margin: 0 30px 50px;
+    width: 300px; }
+  .users__item {
+    align-items: center;
+    display: flex;
+    font-size: .9rem;
+    margin-bottom: 10px;
+    text-indent: 10px; }
+    .users__item:before {
+      content: "";
+      font-size: 1.2rem;
+      margin-right: 10px;
+      width: 30px; }
+    .users__item--user {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 5px; }
+      .users__item--user:before {
+        content: "\e900";
+        font-family: "icomoon";
+        font-weight: 400; }
+    .users__item--address:before {
+      content: "\e902";
+      font-family: "icomoon"; }
+  .users__link {
+    color: #777;
+    text-decoration: none;
+    text-indent: 0; }
+    .users__link:hover {
+      text-decoration: underline; }
+  .users__button {
+    align-items: center;
+    background: transparent;
+    border: 2px solid #ccc;
+    bottom: 10px;
+    color: #777;
+    cursor: pointer;
+    display: flex;
+    font-size: .8rem;
+    padding: 5px 10px;
+    position: absolute;
+    right: 10px;
+    text-decoration: none; }
+    .users__button .icon-phone {
+      padding-right: 10px; }
+    .users__button:hover {
+      background: #ccc;
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
