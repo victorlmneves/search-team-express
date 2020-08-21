@@ -1,10 +1,12 @@
 mixin userCards(spec)
   each val in spec
     .users__content
-      div(class="users__item users__item--user")
-        | #{val.title} #{val.firstName} #{val.lastName}
       .users__item
-      | #{val.id}
+        img(class="user_img" src=val.picture alt=val.firstName)
+      div(class="users__item users__item--id")
+        | #{val.id}
+      div(class="users__item users__item--user")
+        | #{val.title}. #{val.firstName} #{val.lastName}
       .users__item
         a.users__link(href=`mailto: ${val.email}`)
-          | #{email}
+          | #{val.email}

@@ -4,6 +4,12 @@
   position: relative;
   width: 300px;
 
+  &__title {
+    color: $dark-gray;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+
   &__input {
     border: 2px solid $silver;
     border-radius: 3px;
@@ -36,5 +42,11 @@
     &:disabled {
       display: none;
     }
+  }
+
+  .icon-search {
+    bottom: 14px;
+    position: absolute;
+    right: 6px;
   }
 }

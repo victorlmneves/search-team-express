@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900&display=swap");
+
 body, html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -10,12 +12,128 @@ body, html {
   }
 }
 
-section {
-  max-width: 100%;
-  overflow: hidden;
-  padding: 0 30px;
+a:hover {
+  text-decoration: underline;
 }
 
-::placeholder {
-  color: $silver;
+a:visited {
+  color: rgb(0, 80, 160);
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid $gray;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: $gray;
+}
+
+input[type="range"] {
+  height: 0;
+}
+
+button {
+  color: $dark-gray;
+  background-color: $dirty-white;
+  outline: none;
+}
+
+button:disabled {
+  color: $gray;
+}
+
+button:not(:disabled):active {
+  background-color: $dirty-white;
+}
+
+button:focus {
+  border-color: $medium-gray;
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url('../fonts/icons.eot?lcgmzt');
+  src: url('../fonts/icons.eot?lcgmzt#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?lcgmzt') format('truetype'),
+    url('../fonts/icons.woff?lcgmzt') format('woff'),
+    url('../fonts/icons.svg?lcgmzt#icomoon') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+  content: "\e900";
+}
+
+.icon-search:before {
+  content: "\e901";
+}
+
+.icon-location:before {
+  content: "\e902";
+}
+
+.icon-phone:before {
+  content: "\e903";
+}
+
+.app {
+  border: 5px $black solid;
+  margin: 15px;
+  max-height: calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
+  padding: 10px 30px;
+  overflow-y: auto;
+}
+
+h1 {
+  color: $red;
+  text-align: center
+}
+
+.me {
+  margin: 0 auto;
+  max-width: 40vw;
+}
+
+img {
+  width: 100%
+}
+
+figcaption {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
 }

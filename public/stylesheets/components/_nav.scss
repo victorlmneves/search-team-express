@@ -1,0 +1,36 @@
+.nav {
+  border-bottom: 1px solid rgba(255, 62, 0, 0.1);
+  display: flex;
+  font-weight: 300;
+  height: 50px;
+  justify-content: center;
+  padding: 0;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: block;
+    float: left;
+
+     > a {
+       color: #333;
+       position: relative;
+       display: inline-block;
+       text-decoration: none;
+       padding: 1em 0.5em;
+
+       &.active:after {
+         position: absolute;
+         content: "";
+         width: calc(100% - 1em);
+         height: 2px;
+         background-color: rgb(255, 62, 0);
+         display: block;
+         bottom: -1px;
+       }
+     }
+  }
+}

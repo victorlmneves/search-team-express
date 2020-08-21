@@ -1,6 +1,7 @@
 /** Font family **/
 /** Font size **/
 /** Font weight **/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -179,8 +180,8 @@ template {
 
 @font-face {
   font-family: "icomoon";
-  src: url("../fonts/Icons/icons.eot?lcgmzt");
-  src: url("../fonts/Icons/icons.eot?lcgmzt#iefix") format("embedded-opentype"), url("../fonts/Icons/icons.ttf?lcgmzt") format("truetype"), url("../fonts/Icons/icons.woff?lcgmzt") format("woff"), url("../fonts/Icons/icons.svg?lcgmzt#icomoon") format("svg");
+  src: url("../fonts/icons.eot?lcgmzt");
+  src: url("../fonts/icons.eot?lcgmzt#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?lcgmzt") format("truetype"), url("../fonts/icons.woff?lcgmzt") format("woff"), url("../fonts/icons.svg?lcgmzt#icomoon") format("svg");
   font-weight: 400;
   font-style: normal; }
 
@@ -209,24 +210,6 @@ template {
 .icon-phone:before {
   content: "\e903"; }
 
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal; }
-
 body, html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -237,13 +220,105 @@ body, html {
     body, html {
       font-size: 16px; } }
 
-section {
-  max-width: 100%;
-  overflow: hidden;
-  padding: 0 30px; }
+a:hover {
+  text-decoration: underline; }
 
-::placeholder {
+a:visited {
+  color: #0050a0; }
+
+label {
+  display: block; }
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px; }
+
+input:disabled {
   color: #ccc; }
+
+input[type="range"] {
+  height: 0; }
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none; }
+
+button:disabled {
+  color: #ccc; }
+
+button:not(:disabled):active {
+  background-color: #f4f4f4; }
+
+button:focus {
+  border-color: #666; }
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icons.eot?lcgmzt");
+  src: url("../fonts/icons.eot?lcgmzt#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?lcgmzt") format("truetype"), url("../fonts/icons.woff?lcgmzt") format("woff"), url("../fonts/icons.svg?lcgmzt#icomoon") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-user:before {
+  content: "\e900"; }
+
+.icon-search:before {
+  content: "\e901"; }
+
+.icon-location:before {
+  content: "\e902"; }
+
+.icon-phone:before {
+  content: "\e903"; }
+
+.app {
+  border: 5px #000 solid;
+  margin: 15px;
+  max-height: calc(100vh - 40px);
+  min-height: calc(100vh - 40px);
+  padding: 10px 30px;
+  overflow-y: auto; }
+
+h1 {
+  color: #e40614;
+  text-align: center; }
+
+.me {
+  margin: 0 auto;
+  max-width: 40vw; }
+
+img {
+  width: 100%; }
+
+figcaption {
+  margin-top: 30px;
+  text-align: center; }
+
+.text-center {
+  text-align: center; }
 
 /* Source: https://loading.io/css/ */
 .spinner {
@@ -281,6 +356,34 @@ section {
 .is-hidden {
   display: none !important; }
 
+.nav {
+  border-bottom: 1px solid rgba(255, 62, 0, 0.1);
+  display: flex;
+  font-weight: 300;
+  height: 50px;
+  justify-content: center;
+  padding: 0; }
+  .nav__list {
+    margin: 0;
+    padding: 0; }
+  .nav__item {
+    display: block;
+    float: left; }
+    .nav__item > a {
+      color: #333;
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      padding: 1em 0.5em; }
+      .nav__item > a.active:after {
+        position: absolute;
+        content: "";
+        width: calc(100% - 1em);
+        height: 2px;
+        background-color: #ff3e00;
+        display: block;
+        bottom: -1px; }
+
 .no-results {
   display: none;
   flex-wrap: wrap;
@@ -296,6 +399,10 @@ section {
   padding: 0;
   position: relative;
   width: 300px; }
+  .search__title {
+    color: #333;
+    font-size: 1.4rem;
+    font-weight: normal; }
   .search__input {
     border: 2px solid #ccc;
     border-radius: 3px;
@@ -322,6 +429,10 @@ section {
       color: #fff; }
     .search__button:disabled {
       display: none; }
+  .search .icon-search {
+    bottom: 14px;
+    position: absolute;
+    right: 6px; }
 
 .users {
   display: flex;
@@ -329,37 +440,33 @@ section {
   justify-content: center;
   margin: 0 auto;
   max-width: 1200px;
-  opacity: 0;
+  opacity: 1;
   transition: 2s opacity; }
   .users__content {
-    border: 2px solid #ccc;
     border-radius: 3px;
-    padding: 10px 10px 40px;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
     position: relative;
-    margin: 0 30px 50px;
-    width: 300px; }
+    margin: 0 20px 40px;
+    width: 250px; }
   .users__item {
     align-items: center;
     display: flex;
     font-size: .9rem;
-    margin-bottom: 10px;
-    text-indent: 10px; }
-    .users__item:before {
-      content: "";
-      font-size: 1.2rem;
-      margin-right: 10px;
-      width: 30px; }
+    margin-bottom: 10px; }
+    .users__item--id {
+      font-size: .8rem;
+      margin: 15px 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     .users__item--user {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 700;
-      margin-bottom: 5px; }
-      .users__item--user:before {
-        content: "\e900";
-        font-family: "icomoon";
-        font-weight: 400; }
-    .users__item--address:before {
-      content: "\e902";
-      font-family: "icomoon"; }
+      margin-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
   .users__link {
     color: #777;
     text-decoration: none;

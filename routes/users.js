@@ -17,11 +17,11 @@ fetch("https://dummyapi.io/data/api/user?limit=10", requestOptions)
   .then((data) => {
     const content = data.data
 
-    console.log('users: ', content[0].firstName);
+    console.log('users: ', content);
 
     /* GET home page. */
-    router.get("/users", function (req, res, next) {
-      res.send("users", { title: content[0].firstName })
+    router.get("/", function (req, res, next) {
+      res.render("users", { spec: content })
     })
   })
   .catch((error) => console.log(JSON.stringify(error)));
