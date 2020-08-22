@@ -1,5 +1,6 @@
 mixin search()
   section.search
     +title('Search Your Team', 'search__title')
-    input(type="search" id="js-search-input" name="search" class="search__input" placeholder="Search")
-    i.icon-search
+    input(type='search' name='search' class='js-search-input search__input' placeholder='Search')
+    button(type='button' class='js-search search__button')
+      i.icon-search

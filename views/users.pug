@@ -4,5 +4,8 @@ block content
   main
     +menu()
     +search
-    .users
+    section(class='js-no-results no-results')
+      p(class='no-results__msg')
+       | No results found
+    div(class='js-content users')
       +userCards(spec)

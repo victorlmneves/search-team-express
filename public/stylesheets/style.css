@@ -411,6 +411,8 @@ figcaption {
     height: 30px;
     padding: 5px 40px 5px 10px;
     width: 100%; }
+    .search__input:focus {
+      outline: none; }
   .search__button {
     background: transparent;
     border: 0;
@@ -419,10 +421,12 @@ figcaption {
     color: #ccc;
     height: 30px;
     line-height: .8;
+    margin: 0;
     padding: 0 8px;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 35px;
+    width: 30px;
     z-index: 1; }
     .search__button:hover {
       background: #ccc;
@@ -430,7 +434,7 @@ figcaption {
     .search__button:disabled {
       display: none; }
   .search .icon-search {
-    bottom: 14px;
+    bottom: 8px;
     position: absolute;
     right: 6px; }
 
